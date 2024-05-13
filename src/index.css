@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Murecho:wght@100;200;300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-primary;
+  }
+
+  .input-field {
+    @apply bg-white focus:border-color-dark p-2.5 placeholder:text-color-light rounded-md;
+  }
+
+  .select-field {
+    @apply bg-white focus:border-color-dark p-2.5 placeholder:text-color-dark rounded-md;
+  }
+
+  .btn {
+    @apply py-2.5 px-5 rounded-md;
+  }
+
+  .btn-primary {
+    @apply bg-color-primary text-[#fff];
+  }
+
+  .btn-danger {
+    @apply bg-color-danger text-[#fff];
+  }
+
+  .btn-secondary {
+    @apply bg-color-accent text-[#fff];
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
